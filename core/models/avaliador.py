@@ -11,3 +11,6 @@ class Avaliador(models.Model):
 
     def __str__(self):
         return f"{self.nome} ({self.idade}) {self.email} {self.empresa}"
+    
+    class Meta:
+        verbose_name_plural = "Avaliadores"
