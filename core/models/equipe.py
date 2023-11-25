@@ -1,5 +1,7 @@
 from django.db import models
 
+from .people import People
+
 class Equipe(models.Model):
     equipe = models.CharField(max_length=99)
     integrantes = models.ManyToManyField(People, verbose_name=("participantes"))

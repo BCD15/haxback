@@ -1,5 +1,7 @@
 from django.db import models
 
+from .empresa import Empresa
+
 class Avaliador(models.Model):
     nome = models.CharField(max_length=100)
     idade = models.DecimalField(max_digits=3, decimal_places= 0)
